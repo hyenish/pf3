@@ -1,15 +1,16 @@
 #service {
-  
+
 }
 #service .inner {
   padding-bottom: 435px;
   position: relative;
 }
 #service .inner hgroup {
-  
+
 }
-#service .inner hgroup h2 {
-  
+#service .inner hgroup h2 {  
+  color: #aaaaaa;
+  font-size: 22px;
 }
 #service .inner hgroup h3 {
   line-height: 2;
@@ -33,7 +34,7 @@
   transform: translateY(5%);
 }
 #service .inner .contents article a {
-  
+
 }
 #service .inner .contents article a::before{
   content: "";
@@ -52,7 +53,6 @@
 }
 #service .inner .contents article:nth-child(1) a::before{
   background-image: url(../img/main-service-01.jpg);  
-  
 }
 #service .inner .contents article:nth-child(2) a::before{
   background-image: url(../img/main-service-02-1.jpg);  
@@ -74,63 +74,251 @@
   margin: 10px 0;
 }
 #service .inner .contents article a p {
-  
+
 }
 #service .inner .contents article a p:nth-of-type(1){
   color: #7f7f7f;
 }
 #service .inner .contents a.more {
-  /*! width: 300px; */
+  width: 300px;
   position: absolute;
   bottom: 30px;
   left: calc(50% - 50px);
   width: 100px;
   text-align: center;
-  padding-right:40px
+  padding-right: 40px;
 }
 #service .inner .contents a.more::before{
-  content: "";
-  display:block;
-  width:30px;
-  height:2px;
-  background-color:#333;
-  position:absolute;
-  right:0;
-  top:calc(50% - 1px);
+
 }
 #service .inner .contents a.more::after{
-  content: "";
-  display:block;
-  width:10px;
-  height:10px;
-  border: 2px solid #333;
-  transform:rotate(45deg);
-  border-bottom:transparent;
-  border-left: transparent;
-  position:absolute;
-  right:0;
-  top:calc(50% - 6px);
+
 }
 
-/* 내가 만든 화살표 
-  #service .inner .contents a.more::before{
-  content: "";
-  display: block;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #000;
-  border-left: transparent;
-  border-bottom: transparent;
-  position: absolute;
-  transform: translateX(134px) translateY(4px)rotate(45deg);
+/* space */
+#space{
+  position: relative;
+  padding: 280px 0 100px; 
 }
-#service .inner .contents a.more::after{
+#space .inner{
+  margin-left: 0;
+  padding-left: 10%;
+  height: 560px;
+  background-image: url(../img/main-space-01.jpg);
+}
+#space .inner h2{  
+  font-size: 181px;
   position: absolute;
-  content: "";
-  width: 2px;
-  height: 36px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+#space .inner>*:not(h2){
+  color: white; 
+}
+#space .inner p{  
+  line-height: 1.3;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+#space .inner a.more{
+
+}
+#space .inner a.more::before{  
+  background-color: white;
+}
+.more span.hexagon{
+  width: 80px;
+  height: 80px;
   display: block;
-  background-color: black;
-  transform: translateY(-25px) translateX(124px)rotate(90deg);
-} 
-*/
+  background-image: url(../img/hexagon.svg);
+  background-size: cover;
+  position: absolute;
+  right: -40px;
+  top: calc(50% - 33px);
+  display: none;
+}
+.more:hover span.hexagon{
+  display: block;
+  animation-name: moreRotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 51% 40%;
+  animation-timing-function: linear;
+}
+@keyframes moreRotate{
+  0%{
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  45%{
+    opacity: 1;
+  }
+  55%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+
+#space .inner a.more::after{ 
+  border-color: white;
+}
+
+/* 브랜드 스토리 */
+#story {
+
+}
+#story div.inner {
+
+}
+#story div.inner hgroup {
+
+}
+#story div.inner hgroup h2 {
+  color: #aaaaaa;
+  margin-bottom: 20px;
+}
+#story div.inner hgroup h3 {  
+  margin-bottom: 54px;
+}
+#story div.inner hgroup h4 {  
+  line-height: 1.5;
+}
+#story div.inner hgroup h4 span {
+
+}
+#story div.inner ul.contents {
+  width: 90%;
+  margin: 100px 0;
+}
+#story div.inner ul.contents li {
+  flex-grow: 1;
+  width: calc(100% / 3);
+}
+#story div.inner ul.contents li:nth-child(2){
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+#story div.inner ul.contents li::before{
+  content: "";
+  display: block;
+  height: 115px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 45px;
+}
+#story div.inner ul.contents li:nth-child(1)::before{
+  background-image: url(../img/story1.svg);
+}
+#story div.inner ul.contents li:nth-child(2)::before{
+  background-image: url(../img/story2.svg);
+}
+#story div.inner ul.contents li:nth-child(3)::before{
+  background-image: url(../img/story3.svg);
+}
+#story div.inner ul.contents li h5 {
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+#story div.inner ul.contents li p {
+
+}
+#story div.inner a.more {
+
+}
+
+/*miele*/
+#miele {
+  position: relative;
+}
+#miele .inner {
+  margin-left: 0;
+  padding-left: 10%;
+  height: 560px;
+  background-image: url(../img/main-miele-01-1722x850.jpg);
+}
+#miele .inner>*{
+  color: white;
+}
+#miele .inner h2 { 
+  margin-bottom: 22px;
+}
+#miele .inner h2 small.h5 {
+  color: #afafb0;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: -33px;
+}
+#miele .inner p {
+
+}
+#miele .inner a.more {
+  margin-top: 70px;
+}
+#miele .inner a.more::before{
+  background-color: white;
+}
+#miele .inner a.more::after{
+  border-color: white;
+}
+#miele::after{
+  content: "";
+  width: 30%;
+  height: 120px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #767c69;
+  z-index: -1;
+}
+
+/*contact*/
+#contact{
+  height: 600px;
+  position: relative;
+}
+#contact::after{
+  content: "";
+  width: 30%;
+  height: 150%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #767c69;
+  z-index: -1;
+}
+#contact .inner {
+  margin-left: 0;
+  padding-left: 10%;
+  height: 560px;
+}
+#contact .inner::before{
+  content: "";
+  display: block;
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  background-image: url(../img/main-register-01.jpg);
+  right: 324px;
+  top: 152px;
+  opacity: 0.9;
+}
+#contact .inner h2 { 
+  margin-bottom: 22px;
+}
+#contact .inner h2 small.h5 {
+  color: #afafb0;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: -33px;
+}
+#contact .inner p {
+  color: #666666;
+}
+#contact .inner a.more {
+  margin-top: 70px;
+}
