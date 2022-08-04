@@ -5,9 +5,12 @@ h1,h2,h3,h4,h5,h6{
   font-size: 100%; /*기본크기로 16px*/
 }
 a{
-  color: #000;
+  color: white;
   text-decoration: none;
 }
 ul{
   list-style: none;
+}
+img{
+  max-width: 100%;
 }

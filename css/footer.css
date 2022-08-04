@@ -1,0 +1,119 @@
+footer {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.7;
+  position: relative;
+}
+footer::before{
+  content: "URBAN LAUNDERETTE";
+  color: #646363;
+  position: absolute;
+  right: 10%;
+  top: 47px;
+  font-size: 54px;
+  font-weight: 700;
+  text-shadow: 4px 2px 15px #767c69b0;
+}
+footer div.inner {
+  height: 300px;
+  align-items: flex-end;
+}
+footer div.inner h1 {
+
+}
+footer div.inner .left {
+
+}
+footer div.inner .left .tel {
+  font-size: 15px;
+}
+footer div.inner .left .tel p.phone {
+
+}
+footer div.inner .left .tel p.phone strong {
+  display: block;
+  font-size: 40px;
+  line-height: 1;
+  margin: 12px 0 26px;
+}
+footer div.inner .left .tel p:not(.phone) {
+
+}
+footer div.inner .left address {
+  margin-bottom: 100px;
+  margin-top: 60px;
+  color: #888888;
+}
+footer div.inner .left ul.bnb {
+
+  gap: 20px;
+}
+footer div.inner .left ul.bnb li {
+
+}
+footer div.inner .left ul.bnb li a {
+  padding: 15px 20px;
+  font-size: 14px;
+}
+footer div.inner .left ul.bnb li:not(:first-child) a{
+  color: #999;
+}
+footer div.inner .right {
+
+}
+footer div.inner .right ul.sns {
+  margin-bottom: 100px;
+}
+footer div.inner .right ul.sns li {
+
+}
+footer div.inner .right ul.sns li a {
+  font-size: 0;
+}
+footer div.inner .right ul.sns li a::before{
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+footer div.inner .right ul.sns li:nth-child(1) a::before{
+  background-image: url(../img/facebook.svg);
+}
+footer div.inner .right ul.sns li:nth-child(2) a::before{
+  background-image: url(../img/insta.svg);
+}
+footer div.inner .right ul.sns li:nth-child(3) a::before{
+  background-image: url(../img/blog.svg);
+}
+footer div.inner .right > a.email {
+  color: #cccccc;
+}
+footer a.top{
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  position: absolute;
+  top: -25px;
+  left: calc(50% - 25px);
+  padding: 0;
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+}
+footer a.top:hover{
+  background-color: #615e5e;
+}
+footer a.top::before{
+  right: calc(50% - 15px);
+  background-color: white;
+}
+footer a.top::after{
+  right: 10px;
+  border-color: white;
+}
+.top:hover span.pentagon{
+  animation-name: none;
+  display: none;
+}

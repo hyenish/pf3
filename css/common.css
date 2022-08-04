@@ -27,8 +27,8 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 /* hn태그 스타일링*/
 .p{
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   font-family: 'Noto Sans KR', sans-serif;
 }
 .h1{
