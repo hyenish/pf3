@@ -27,10 +27,17 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 /* hn태그 스타일링*/
 .p{
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.h1{
+  font-size: 80px;
+  font-weight: 700;
   font-family: 'Noto Sans KR', sans-serif;
 }
 .h2{
-  font-size: 35px;
+  font-size: 54px;
   font-weight: 700;
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -40,7 +47,12 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   font-family: 'Noto Sans KR', sans-serif;
 }
 .h4{
-  font-size: 27px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.h5{
+  font-size: 23px;
   font-weight: 700;
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -102,5 +114,34 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   text-align: center;
 }
 
-
-
+/* 화살표*/
+.more{
+  position: relative;
+  width: 100px;
+  text-align: center;
+  padding-right:30px;
+}
+.more::before{
+  content: "";
+  display:block;
+  width:30px;
+  height:2px;
+  background-color:#333;
+  position:absolute;
+  right:0;
+  top:calc(50% - 1px);
+  z-index: 1;
+}
+.more::after{
+  content: "";
+  display:block;
+  width:8px;
+  height:8px;
+  border: 2px solid #333;
+  transform:rotate(45deg);
+  border-bottom:transparent;
+  border-left: transparent;
+  position:absolute;
+  right:0;
+  top:calc(50% - 5px);
+}
