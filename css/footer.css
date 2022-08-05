@@ -14,9 +14,12 @@ footer::before{
   font-weight: 700;
   text-shadow: 4px 2px 15px #767c69b0;
 }
+footer a{
+  color: #fff;
+}
 footer div.inner {
-  height: 300px;
   align-items: flex-end;
+  position: relative;
 }
 footer div.inner h1 {
 
@@ -34,7 +37,7 @@ footer div.inner .left .tel p.phone strong {
   display: block;
   font-size: 40px;
   line-height: 1;
-  margin: 12px 0 26px;
+  margin: 8px 0 26px;
 }
 footer div.inner .left .tel p:not(.phone) {
 
@@ -43,10 +46,10 @@ footer div.inner .left address {
   margin-bottom: 100px;
   margin-top: 60px;
   color: #888888;
+  font-size: 14px;
 }
 footer div.inner .left ul.bnb {
-
-  gap: 20px;
+  transform: translateX(-14px);
 }
 footer div.inner .left ul.bnb li {
 
@@ -69,22 +72,20 @@ footer div.inner .right ul.sns li {
 }
 footer div.inner .right ul.sns li a {
   font-size: 0;
-}
-footer div.inner .right ul.sns li a::before{
-  content: "";
+  width: 45px;
+  height: 45px;
   display: block;
-  width: 40px;
-  height: 40px;
+  background-size:contain;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
 }
-footer div.inner .right ul.sns li:nth-child(1) a::before{
+footer div.inner .right ul.sns li:nth-child(1) a{
   background-image: url(../img/facebook.svg);
 }
-footer div.inner .right ul.sns li:nth-child(2) a::before{
+footer div.inner .right ul.sns li:nth-child(2) a{
   background-image: url(../img/insta.svg);
 }
-footer div.inner .right ul.sns li:nth-child(3) a::before{
+footer div.inner .right ul.sns li:nth-child(3) a{
   background-image: url(../img/blog.svg);
 }
 footer div.inner .right > a.email {

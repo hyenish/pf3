@@ -72,7 +72,7 @@
   }
   100%{
     transform: translateY(100%);
-     opacity: 0;
+    opacity: 0;
   }
 }
 #title .inner br{
@@ -95,7 +95,7 @@
   height: 500px;
   justify-content: space-between;
   width: 164px;
-  
+
 }
 #title .titleaside a.campaign{
   transform: rotate(90deg) translateX(78px);
@@ -111,14 +111,14 @@
 }
 @keyframes textcolor{
   0%{
-   color:black;
+    color:black;
   }
   15%{
-   color:green;
-   font-weight: 700;
+    color:green;
+    font-weight: 700;
   }
   30%{
-   color:black;
+    color:black;
   }
   100%{
     color:black;
@@ -148,7 +148,7 @@
   10%{
     opacity: 0;
   }
-   20%{
+  20%{
     opacity: 1;
   }
   100%{

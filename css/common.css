@@ -47,12 +47,12 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   font-family: 'Noto Sans KR', sans-serif;
 }
 .h4{
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 700;
   font-family: 'Noto Sans KR', sans-serif;
 }
 .h5{
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 700;
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -88,7 +88,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   display: block;
 }
 .p{
-  line-height: 1.6;
+  line-height: 1.5;
 }
 /* 패딩 */
 .padding50{
@@ -126,11 +126,11 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
   display:block;
   width:30px;
   height:2px;
-  background-color:#333;
   position:absolute;
   right:0;
   top:calc(50% - 1px);
   z-index: 1;
+  background-color:#333;
 }
 .more::after{
   content: "";
