@@ -1,18 +1,17 @@
 footer {
-  background-color: #000;
+  background-color: #000000;
   color: #fff;
   line-height: 1.7;
   position: relative;
 }
 footer::before{
-  content: "URBAN LAUNDERETTE";
-  color: #646363;
+  content: "Urban Launderette";
+  color: #71817a80;
   position: absolute;
-  right: 10%;
-  top: 47px;
-  font-size: 54px;
+  right: 0;
+  top: 0;
+  font-size: 50px;
   font-weight: 700;
-  text-shadow: 4px 2px 15px #767c69b0;
 }
 footer a{
   color: #fff;
@@ -45,17 +44,22 @@ footer div.inner .left .tel p:not(.phone) {
 footer div.inner .left address {
   margin-bottom: 100px;
   margin-top: 60px;
-  color: #888888;
+  color: #999;
   font-size: 14px;
+  letter-spacing: -1px;
+}
+footer div.inner .left address span{
+  display: none;
 }
 footer div.inner .left ul.bnb {
+
   transform: translateX(-14px);
 }
 footer div.inner .left ul.bnb li {
 
 }
 footer div.inner .left ul.bnb li a {
-  padding: 15px 20px;
+  padding: 15px 14px;
   font-size: 14px;
 }
 footer div.inner .left ul.bnb li:not(:first-child) a{
@@ -65,6 +69,7 @@ footer div.inner .right {
 
 }
 footer div.inner .right ul.sns {
+
   margin-bottom: 100px;
 }
 footer div.inner .right ul.sns li {
@@ -79,17 +84,25 @@ footer div.inner .right ul.sns li a {
   background-repeat: no-repeat;
   background-position: center;
 }
-footer div.inner .right ul.sns li:nth-child(1) a{
-  background-image: url(../img/facebook.svg);
+footer div.inner .right ul.sns li:nth-child(1) a {
+  background-image: url(../img/f.svg);
 }
-footer div.inner .right ul.sns li:nth-child(2) a{
-  background-image: url(../img/insta.svg);
+footer div.inner .right ul.sns li:nth-child(2) a {
+  background-image: url(../img/i.svg);
 }
-footer div.inner .right ul.sns li:nth-child(3) a{
+footer div.inner .right ul.sns li:nth-child(3) a {
   background-image: url(../img/blog.svg);
 }
 footer div.inner .right > a.email {
-  color: #cccccc;
+  color: #999;
+}
+footer div.inner .right > a.email::before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-top: 1px solid #4d4d4d;
+  left: 0;
+  transform: translateY(-30px);
 }
 footer a.top{
   font-size: 0;
@@ -115,6 +128,5 @@ footer a.top::after{
   border-color: white;
 }
 .top:hover span.pentagon{
-  animation-name: none;
   display: none;
 }
